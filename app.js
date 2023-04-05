@@ -16,6 +16,23 @@ mongoose.connect('mongodb+srv://BhavinT:' + process.env.Mongo_Atlas_PS + '@clust
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+//prevent corse error
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin','*')   //Give access premission to al origin, * descirbe all. we can give specific origin name.
+    res.header('Access-Control-Allow-Header',
+            "Origin, X-Requested-With, Content-Type, Accept, Authorization" //  all this headers can accepted for an incomming request ,can use star(*) for all header
+    );//define which client of header want to give access
+
+    if(req.method === "OPTIONS")
+    {
+        res.header('Access-Control-Allow-Methods',  'PUT, GET, POST, DELETE, PATCH'); //Giving access whcih method as request can server accept
+        return res.status(200).json({});
+    }
+    next();    
+})
+
+
 app.use('/TokenHolderData', tHolderRoutes);
 app.use('/AddEventData', eventdataRoutes);
 
