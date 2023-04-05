@@ -2,7 +2,7 @@
 
 Create a Single-Page-Application that displays a single table of all the account holders of the USDC stable coin on the Etherem blockchain. USDC is an ERC-20 contract with address:
 
- => For getting USDT tokrn holders data I need to use Etherscan API. but for it rquired to purchage it's pro version. so i have downloaded it's csv file and added csv file data in Mongodb database by creating API. and then used that API url forshowing data in frontend side.
+ => For getting USDT token holders data I need to use Etherscan API. but for it rquired to purchage it's pro version. so i have downloaded it's csv file and added csv file data in Mongodb database by creating API. and then used that API url for showing data in frontend side.
 
 Stored data of account holders in data base is as follow:
 
