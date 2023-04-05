@@ -22,8 +22,10 @@ when data successfully stored in Mongodb Atlas databse:
 
 For running project do follow the steps:
 
+```shell 
 step 1: take project clone.
 step 2: npm i.
 step 3: nodemon server.js
+```
 
 Thanks :)
