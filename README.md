@@ -13,7 +13,6 @@ when i call API:
 when data successfully stored in Mongodb Atlas databse:
 
 ![Screenshot from 2023-04-05 15-50-17](https://user-images.githubusercontent.com/70260207/230055324-9645ace0-8bba-4c06-a44d-ddc9a1117542.png)
-![Screenshot from 2023-04-05 16-28-43](https://user-images.githubusercontent.com/70260207/230060867-6bba6c22-d19c-4996-b819-7bbdee80578c.png)
 
 
 ![Screenshot from 2023-04-05 15-49-53](https://user-images.githubusercontent.com/70260207/230055316-640ac365-946e-4c22-8771-230454568a5f.png)
