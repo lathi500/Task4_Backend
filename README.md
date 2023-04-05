@@ -14,7 +14,7 @@ when data successfully stored in Mongodb Atlas databse:
 
 ![Screenshot from 2023-04-05 15-50-17](https://user-images.githubusercontent.com/70260207/230055324-9645ace0-8bba-4c06-a44d-ddc9a1117542.png)
 
- 2) Transfer token event data. I have stored historicale emitted event data here. 
+ 2) Transfer token event data. I have stored historical emitted event data here. 
 
 
 ![Screenshot from 2023-04-05 15-49-53](https://user-images.githubusercontent.com/70260207/230055316-640ac365-946e-4c22-8771-230454568a5f.png)
