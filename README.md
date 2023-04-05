@@ -19,4 +19,11 @@ when data successfully stored in Mongodb Atlas databse:
 
 ![Screenshot from 2023-04-05 15-49-53](https://user-images.githubusercontent.com/70260207/230055316-640ac365-946e-4c22-8771-230454568a5f.png)
 
+
+For running project do follow the steps:
+
+step 1: take project clone.
+step 2: npm i.
+step 3: nodemon server.js
+
 Thanks :)
