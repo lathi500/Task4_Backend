@@ -29,8 +29,8 @@ step 3: nodemon server.js
 ```
 
 Note: Please add given data in ENV environment file for security purpose.
-Mongo_Atlas_PS: Mongodb atlas Database password
-Node_Provide:  Your node connection provider
+Mongo_Atlas_PS: Mongodb atlas Database password,
+Node_Provide:  Your node connection provider,
 TOKEN_ADDRESS: Token address
 
 Thanks :)
