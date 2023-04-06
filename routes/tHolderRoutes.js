@@ -71,7 +71,7 @@ router.get('/', (req, res, next) => {
 
 });
 
-//API for delete data using tHolderID
+//API for delete data using token HolderID
 
 router.delete('/:tHolderID', (req, res, next) => {
     const id = req.params.tHolderID;
@@ -85,7 +85,7 @@ router.delete('/:tHolderID', (req, res, next) => {
         })
 })
 
-//API for delet all data
+//API for delete all data
 
 router.delete('/', (req, res, next) => {
     tHolder.deleteMany({}).then(result => {
