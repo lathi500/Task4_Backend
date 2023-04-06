@@ -13,7 +13,7 @@ const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/{ Add Your Alchemy Ke
 const contract = new web3.eth.Contract(CONTRACT_ABI, "0x7af963cF6D228E564e2A0aA0DdBF06210B38615D");
 
 
-//Post method for add past Transfer event data if USDC token in mongodb data base 
+//Post method for add past Transfer event data if USDC token in mongodb database 
 
 router.post('/', (req, res, next) => {
     contract.getPastEvents('Transfer', {
@@ -45,7 +45,7 @@ router.post('/', (req, res, next) => {
     })
 })
 
-//API for delete all event data from data base
+//API for delete all event data from database
 
 router.delete('/', (req, res, next) => {
     eventData.deleteMany({}).then(result => {
