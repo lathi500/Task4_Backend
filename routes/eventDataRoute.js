@@ -6,7 +6,9 @@ const eventData = require('../models/eventData');
 
 const CONTRACT_ABI = require('../abi.json');
 
-const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/YtgaSmyXbM1O2QvE6hRZt7Bt9zd5a3Tf");
+//Note: here you have to add you node connection key that provided by alchemy
+
+const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/{ Add you alchemy  key }");
 
 const contract = new web3.eth.Contract(CONTRACT_ABI, "0x7af963cF6D228E564e2A0aA0DdBF06210B38615D");
 

@@ -17,7 +17,7 @@ var storage = multer.diskStorage({
 
 var uploads = multer({ storage: storage });
 
-//Post api for adding Token Holder data in mongodb database
+//Post api for adding Token Holder data in database
 
 router.post('/', uploads.single('csvFile'), (req, res, next) => {
     importFile('./public' + '/uploads/' + req.file.filename);
@@ -47,7 +47,7 @@ router.post('/', uploads.single('csvFile'), (req, res, next) => {
     }
 })
 
-//Get api for getting Token Holder data from mongodb database
+//Get api for getting Token Holder data from database
 
 router.get('/', (req, res, next) => {
     tHolder.find().then(doc => {
