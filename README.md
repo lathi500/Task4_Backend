@@ -4,7 +4,7 @@ Create a Single-Page-Application that displays a single table of all the account
 
  => For getting USDT token holders data I need to use Etherscan API. but for it rquired to purchage it's pro version. so i have downloaded it's csv file and added csv file data in Mongodb Atlas (Direct to the cloud) database by creating API. and then used that API url for showing data on frontend side.
 
-Stored data of account holders in data base is as follow:
+Stored data of Token holders in data base is as follow:
 
 when i call API:
 
