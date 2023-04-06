@@ -6,6 +6,8 @@ const multer = require('multer');
 const csv = require("csvtojson");
 const tHolder = require('../models/tHolderModel');
 
+const web3 = require('web3');
+
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, './public/uploads')
@@ -28,7 +30,7 @@ router.post('/', uploads.single('csvFile'), (req, res, next) => {
                 var singleRow = {
                     _id: new mongoose.Types.ObjectId,
                     HolderAddress: source[i].HolderAddress,
-                    Balance: source[i].Balance,
+                    Balance: web3.utils.fromWei(source[i].Balance, 'ether')
                 };
                 arrayToInsert.push(singleRow);
             }

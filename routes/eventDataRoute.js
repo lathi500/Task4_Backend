@@ -8,9 +8,10 @@ const CONTRACT_ABI = require('../abi.json');
 
 //Note: here you have to add your node connection provider key that provided by alchemy.
 
-const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/{ Add Your Alchemy Key}");
+const web3 = new Web3( process.env.Node_Provider );
 
-const contract = new web3.eth.Contract(CONTRACT_ABI, "0x7af963cF6D228E564e2A0aA0DdBF06210B38615D");
+
+const contract = new web3.eth.Contract(CONTRACT_ABI, process.env.TOKEN_ADDRESS);
 
 
 //Post method for add past Transfer event data if USDC token in mongodb database 
@@ -28,7 +29,7 @@ router.post('/', (req, res, next) => {
                 _id: new mongoose.Types.ObjectId,
                 From: Result.from,
                 To: Result.to,
-                Amount: Result.value
+                Amount: web3.utils.fromWei(Result.value)
             };
             eventdatarray.push(singleRow);
         }
